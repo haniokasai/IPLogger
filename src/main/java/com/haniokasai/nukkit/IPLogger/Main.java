@@ -27,7 +27,7 @@ public class Main extends PluginBase implements Listener{
 		getDataFolder().mkdir();
 
 		Config config = new Config(
-                new File(this.getDataFolder(), "data.yaml"),Config.YAML,
+                new File(this.getDataFolder(), "data.yml"),Config.YAML,
                 new LinkedHashMap<String, Object>() {
                     {
                     	put("name", "iplist");
@@ -40,7 +40,7 @@ public class Main extends PluginBase implements Listener{
 
 	@EventHandler
 	public void join(PlayerJoinEvent event){
-		Config config = new Config(new File(this.getDataFolder(), "data.yaml"),Config.YAML);
+		Config config = new Config(new File(this.getDataFolder(), "data.yml"),Config.YAML);
 		Player player = event.getPlayer();
 		String name = player.getName();
 		String ip = player.getAddress();
@@ -62,7 +62,7 @@ public class Main extends PluginBase implements Listener{
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-    	Config config = new Config(new File(this.getDataFolder(), "config.yml"));
+    	Config config = new Config(new File(this.getDataFolder(), "data.yml"));
         switch (command.getName()) {
             case "ipl":
         		if(!sender.hasPermission("ipl")){
