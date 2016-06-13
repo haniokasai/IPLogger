@@ -3,9 +3,7 @@ package com.haniokasai.nukkit.IPLogger;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.LinkedHashMap;
-import java.util.Set;
 
 import cn.nukkit.Player;
 import cn.nukkit.command.Command;
@@ -75,17 +73,15 @@ public class Main extends PluginBase implements Listener{
         				if(config.exists(args[0])){
         					sender.sendMessage(TextFormat.RED + "/*/*/*/*/IPLIST/*/*/*/*/");
         					sender.sendMessage(TextFormat.RED + "PlayerName: "+args[0]);
-        					Set<String> ipl = (Set<String>) config.get(args[0]);
-        					Iterator<String> ipl2 = ipl.iterator();
-        					while (ipl2.hasNext()) {
-
-        				    }
+        					@SuppressWarnings("unchecked")
+							ArrayList<String> ipl = (ArrayList<String>) config.get(args[0]);
+        					sender.sendMessage(TextFormat.RED +ipl );
         				}else{
         					sender.sendMessage(TextFormat.RED + "This player isnt exists!");
         				}
         			} catch (Exception e) {
         				return false;
-        			    }
+        			}
         		}
             break;
         }
