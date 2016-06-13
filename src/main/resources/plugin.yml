@@ -5,3 +5,11 @@ author: haniokasai
 api: ["1.0.0"]
 description: IPlogger
 website: http://haniokasai.com
+
+commands:
+   ipl:
+      description: IPLogger
+      usage: /ipl <player-name>
+      permission: ipl
+      permission-message: You don't have <permission>
+      default: op
