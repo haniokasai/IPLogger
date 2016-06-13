@@ -1,0 +1,7 @@
+name: IPLogger
+main: com.haniokasai.nukkit.IPLogger.Main
+version: 0.0.1
+author: haniokasai
+api: ["1.0.0"]
+description: IPlogger
+website: http://haniokasai.com
