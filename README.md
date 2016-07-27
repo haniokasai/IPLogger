@@ -1,6 +1,6 @@
 # IPLogger
 
-##Download
+##Download http://jenkins.haniokasai.com/job/IPLogger-Nukkit/
 [![Build Status](http://jenkins.haniokasai.com/buildStatus/icon?job=IPLogger-Nukkit)](http://jenkins.haniokasai.com/job/IPLogger-Nukkit/ "Jenkins ")
 
 you can get ip-address by name.
